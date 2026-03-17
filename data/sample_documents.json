@@ -1,0 +1,107 @@
+[
+  {
+    "id": "doc_001",
+    "title": "Introduction to Large Language Models",
+    "content": "Large Language Models (LLMs) are deep learning models trained on massive text corpora. They learn statistical patterns in language and can generate coherent text, answer questions, summarise documents, and perform many NLP tasks without task-specific training. Models like GPT-4, Claude, and Gemini are examples of state-of-the-art LLMs. They use the Transformer architecture with self-attention mechanisms to capture long-range dependencies in text.",
+    "category": "AI/ML",
+    "url": "https://example.com/llm-intro"
+  },
+  {
+    "id": "doc_002",
+    "title": "Vector Databases Explained",
+    "content": "A vector database stores high-dimensional numerical representations of data (vectors or embeddings) and enables fast approximate nearest-neighbour search. They are essential for AI applications such as semantic search, recommendation systems, and retrieval-augmented generation (RAG). Popular vector databases include Endee, Pinecone, Weaviate, Qdrant, and Milvus. They use indexing algorithms like HNSW and IVF to achieve sub-millisecond query latency at scale.",
+    "category": "Databases",
+    "url": "https://example.com/vector-db"
+  },
+  {
+    "id": "doc_003",
+    "title": "What is Retrieval-Augmented Generation (RAG)?",
+    "content": "RAG is a technique that improves LLM outputs by retrieving relevant documents from an external knowledge base before generating a response. The retrieved context is injected into the prompt, grounding the model's answer in factual information. RAG reduces hallucination, keeps models up to date without retraining, and enables question answering over private documents. The pipeline typically involves an embedder, a vector store, and a generator.",
+    "category": "AI/ML",
+    "url": "https://example.com/rag-guide"
+  },
+  {
+    "id": "doc_004",
+    "title": "How HNSW Indexing Works",
+    "content": "Hierarchical Navigable Small World (HNSW) is a graph-based approximate nearest-neighbour algorithm. It builds a multi-layer proximity graph where higher layers contain long-range connections for fast navigation and lower layers contain dense local connections for precision. HNSW offers logarithmic search complexity and is widely used in production vector databases. Endee uses HNSW internally for its indexing engine.",
+    "category": "Databases",
+    "url": "https://example.com/hnsw"
+  },
+  {
+    "id": "doc_005",
+    "title": "Python FastAPI Framework Guide",
+    "content": "FastAPI is a modern, high-performance Python web framework for building APIs. It is built on Starlette and Pydantic, offering automatic OpenAPI schema generation, data validation, and async support out of the box. FastAPI is one of the fastest Python frameworks available, rivalling Node.js in throughput. Its type-hint-based interface makes code easy to write, read, and maintain.",
+    "category": "Web Development",
+    "url": "https://example.com/fastapi"
+  },
+  {
+    "id": "doc_006",
+    "title": "Sentence Transformers for Semantic Similarity",
+    "content": "Sentence Transformers is a Python library that provides pre-trained models capable of encoding sentences into dense vector embeddings. These embeddings capture semantic meaning, so sentences with similar meanings produce similar vectors. The library is built on top of Hugging Face Transformers and supports models like all-MiniLM-L6-v2, all-mpnet-base-v2, and multi-lingual models. It is commonly used for semantic search, clustering, and paraphrase detection.",
+    "category": "AI/ML",
+    "url": "https://example.com/sentence-transformers"
+  },
+  {
+    "id": "doc_007",
+    "title": "Docker and Containerisation for Developers",
+    "content": "Docker is an open platform for developing, shipping, and running applications in isolated containers. Containers package code and its dependencies together so the application runs consistently across environments. Docker Compose allows you to define multi-container applications in a single YAML file. Containerisation simplifies deployment pipelines and is a cornerstone of modern DevOps and microservices architectures.",
+    "category": "DevOps",
+    "url": "https://example.com/docker"
+  },
+  {
+    "id": "doc_008",
+    "title": "Understanding Cosine Similarity",
+    "content": "Cosine similarity measures the cosine of the angle between two vectors in a high-dimensional space. A value of 1 means the vectors point in the same direction (identical), 0 means they are perpendicular (unrelated), and -1 means they point in opposite directions. In semantic search, cosine similarity is used to rank documents by relevance to a query vector. It is preferred over Euclidean distance for text embeddings because it is magnitude-invariant.",
+    "category": "AI/ML",
+    "url": "https://example.com/cosine-similarity"
+  },
+  {
+    "id": "doc_009",
+    "title": "Streamlit: Build Data Apps in Python",
+    "content": "Streamlit is an open-source Python library for building interactive web applications for data science and machine learning. You can create dashboards, visualisations, and interactive tools with pure Python — no HTML, CSS, or JavaScript required. Streamlit apps automatically re-run from top to bottom whenever a widget changes, making it extremely simple to prototype and share AI applications.",
+    "category": "Web Development",
+    "url": "https://example.com/streamlit"
+  },
+  {
+    "id": "doc_010",
+    "title": "Kubernetes for Container Orchestration",
+    "content": "Kubernetes (K8s) is an open-source system for automating the deployment, scaling, and management of containerised applications. It groups containers into pods, manages load balancing, handles self-healing of failed containers, and supports rolling updates. Originally developed by Google, Kubernetes is now the de facto standard for running containers in production. It works well with Docker and popular cloud providers like AWS, GCP, and Azure.",
+    "category": "DevOps",
+    "url": "https://example.com/kubernetes"
+  },
+  {
+    "id": "doc_011",
+    "title": "Neural Networks and Deep Learning Basics",
+    "content": "A neural network is a computational model inspired by the human brain, composed of layers of interconnected nodes (neurons). Deep learning refers to neural networks with many hidden layers. These networks learn representations of data hierarchically — from low-level features to abstract concepts. Deep learning powers computer vision, speech recognition, natural language processing, and generative AI. Training uses backpropagation and gradient descent to minimise a loss function.",
+    "category": "AI/ML",
+    "url": "https://example.com/deep-learning"
+  },
+  {
+    "id": "doc_012",
+    "title": "REST API Design Best Practices",
+    "content": "A RESTful API uses HTTP methods (GET, POST, PUT, DELETE) to perform operations on resources identified by URLs. Best practices include using nouns not verbs in endpoints, returning appropriate HTTP status codes, versioning your API (e.g. /api/v1/), using JSON for request/response bodies, implementing pagination for list endpoints, and securing endpoints with authentication tokens. Good API design improves developer experience and long-term maintainability.",
+    "category": "Web Development",
+    "url": "https://example.com/rest-api"
+  },
+  {
+    "id": "doc_013",
+    "title": "Introduction to Transformers Architecture",
+    "content": "The Transformer architecture, introduced in the 2017 paper 'Attention Is All You Need', revolutionised natural language processing. It relies entirely on self-attention mechanisms to model relationships between tokens in a sequence, eliminating recurrence. The architecture consists of an encoder and decoder (or just one of the two), with multi-head attention, feed-forward layers, residual connections, and layer normalisation. BERT, GPT, and T5 are all based on the Transformer architecture.",
+    "category": "AI/ML",
+    "url": "https://example.com/transformers"
+  },
+  {
+    "id": "doc_014",
+    "title": "PostgreSQL vs NoSQL Databases",
+    "content": "PostgreSQL is a powerful open-source relational database that uses structured schemas and SQL for querying. NoSQL databases like MongoDB, Redis, and Cassandra offer flexible schemas and horizontal scalability. The choice depends on your data model: relational data with complex joins suits PostgreSQL; document-oriented, key-value, or wide-column data suits NoSQL. Hybrid approaches using both relational and NoSQL databases are common in modern architectures.",
+    "category": "Databases",
+    "url": "https://example.com/postgres-nosql"
+  },
+  {
+    "id": "doc_015",
+    "title": "CI/CD Pipelines with GitHub Actions",
+    "content": "Continuous Integration and Continuous Deployment (CI/CD) automates the process of testing and deploying code. GitHub Actions is a workflow automation platform built into GitHub. You define workflows in YAML files that trigger on events like push or pull request. Typical pipelines include steps for linting, unit testing, building Docker images, and deploying to staging or production environments. CI/CD reduces manual errors and speeds up software delivery.",
+    "category": "DevOps",
+    "url": "https://example.com/cicd"
+  }
+]

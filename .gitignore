@@ -1,0 +1,36 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+dist/
+build/
+*.so
+.venv/
+venv/
+env/
+
+# Env
+.env
+
+# Data
+data/*.jsonl
+
+# Models cache
+.cache/
+models/
+
+# Streamlit
+.streamlit/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# Docker volumes
+endee-data/
+
+# OS
+.DS_Store
+Thumbs.db
